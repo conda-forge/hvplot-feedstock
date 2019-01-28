@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: hvplot
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/h/hvplot/hvplot-{{ version }}.tar.gz
-  sha256: dfc1dc3da89a77bf0f28db7e11cd3ba29d56c111245940e25cfe13b4ef2a5410
+  sha256: bce169cf2d1b3ff9ce607d1787f608758e72a498434eaa2bece31eea1f51963a
 
 build:
   number: 0
@@ -19,8 +19,8 @@ requirements:
     - pip
   run:
     - python
-    - bokeh >=0.12.15
-    - holoviews >=1.10.5
+    - bokeh >=1.0
+    - holoviews >=1.11.2
     - pandas
 
 test:
