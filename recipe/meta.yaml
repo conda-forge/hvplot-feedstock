@@ -9,7 +9,7 @@ source:
   sha256: bce169cf2d1b3ff9ce607d1787f608758e72a498434eaa2bece31eea1f51963a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
@@ -26,10 +26,7 @@ requirements:
 test:
   imports:
     - hvplot
-    - hvplot.examples
-    - hvplot.examples.assets
-    - hvplot.examples.user_guide
-    - hvplot.examples.user_guide.images
+    - hvplot.pandas
     - hvplot.tests
 
 about:
