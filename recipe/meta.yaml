@@ -22,6 +22,7 @@ requirements:
     - bokeh >=1.0
     - holoviews >=1.11.2
     - pandas
+    - colorcet
 
 test:
   imports:
