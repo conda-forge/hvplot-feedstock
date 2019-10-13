@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About hvplot
 ============
 
@@ -18,8 +14,15 @@ Summary: A high-level plotting API for the PyData ecosystem built on HoloViews
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/hvplot-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/hvplot-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4893&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/hvplot-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
