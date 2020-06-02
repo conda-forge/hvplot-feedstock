@@ -1,4 +1,4 @@
-{% set version = "0.5.2" %}
+{% set version = "0.6.0" %}
 
 package:
   name: hvplot
@@ -6,12 +6,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/h/hvplot/hvplot-{{ version }}.tar.gz
-  sha256: 408a7756b980df148d1f2fd59cd690ad4870d7e3c3c5e46c6b5c2e71fc6a097c
+  sha256: 8fcf2f251bd9d4b0390d9c272c992aa75e11174829e416a22de8fba38acc1ce9
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  # ModuleNotFoundError: No module named 'hvplot.__main__'
+  # entry_points:
+  #   - hvplot = hvplot.__main__:main
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -19,16 +22,20 @@ requirements:
     - pip
   run:
     - python
-    - bokeh >=1.0
-    - holoviews >=1.11.2
+    - bokeh >=1.0.0
+    - colorcet >=2
+    - holoviews >=1.11.0
+    - numpy >=1.15
     - pandas
-    - colorcet
 
 test:
   imports:
     - hvplot
     - hvplot.pandas
-    - hvplot.tests
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://pyviz.github.io/hvplot
