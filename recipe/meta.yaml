@@ -34,7 +34,6 @@ test:
     - hvplot.pandas
   commands:
     - pip check
-    - hvplot --help
   requires:
     - pip
 
