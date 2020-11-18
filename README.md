@@ -5,11 +5,9 @@ Home: https://pyviz.github.io/hvplot
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hvplot-feedstock/blob/master/LICENSE.txt)
 
 Summary: A high-level plotting API for the PyData ecosystem built on HoloViews
-
-
 
 Current build status
 ====================
