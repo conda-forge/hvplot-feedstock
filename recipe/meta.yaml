@@ -22,7 +22,7 @@ requirements:
     - pyct
     - pip
   run:
-    - python
+    - python >=2.7
     - bokeh >=1.0.0
     - colorcet >=2
     - holoviews >=1.11.0
@@ -39,7 +39,7 @@ test:
     - pip
 
 about:
-  home: https://pyviz.github.io/hvplot
+  home: https://hvplot.holoviz.org
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
