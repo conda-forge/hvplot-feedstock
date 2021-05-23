@@ -1,7 +1,7 @@
 About hvplot
 ============
 
-Home: https://pyviz.github.io/hvplot
+Home: https://hvplot.holoviz.org
 
 Package license: BSD-3-Clause
 
@@ -36,6 +36,7 @@ Installing `hvplot` from the `conda-forge` channel can be achieved by adding `co
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `hvplot` can be installed with:
