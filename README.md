@@ -145,6 +145,7 @@ Feedstock Maintainers
 
 * [@CurtLH](https://github.com/CurtLH/)
 * [@jbednar](https://github.com/jbednar/)
+* [@maximlt](https://github.com/maximlt/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@philippjfr](https://github.com/philippjfr/)
 
