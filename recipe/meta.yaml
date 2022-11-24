@@ -28,6 +28,7 @@ requirements:
     - numpy >=1.15
     - packaging
     - pandas
+    - panel >=0.11.0
 
 test:
   source_files:
