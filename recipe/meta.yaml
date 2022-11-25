@@ -15,7 +15,8 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    # Temp upper pin as HoloViews doesn't yet support 3.11, to be removed.
+    - python >=3.6, <3.11
     - param >=1.7.0
     - pip
     - pyct >=0.4.4
