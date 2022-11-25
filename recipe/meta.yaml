@@ -43,6 +43,8 @@ test:
     - pip check
     - pytest hvplot -k "not test_urls[core.py]"
   requires:
+    # Temp Python pin, same as in host, to be removed 
+    - python <3.11
     - pip
     - pytest
     - parameterized
