@@ -16,10 +16,9 @@ build:
 requirements:
   host:
     - python >=3.8
-    - param >=1.7.0
     - pip
-    - pyct >=0.4.4
     - setuptools >=30.3.0
+    - setuptools_scm >=6
   run:
     - python >=3.8
     - bokeh >=1.0.0
