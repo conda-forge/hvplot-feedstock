@@ -1,4 +1,4 @@
-{% set version = "0.9.2" %}
+{% set version = "0.10.0" %}
 
 package:
   name: hvplot
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/h/hvplot/hvplot-{{ version }}.tar.gz
-  sha256: 9a8c9e9249139aaa3dee5f1cea0f93cf36374d179e986705fcddc2b92c470793
+  sha256: e87486a95bfe151ab52ef163a5e93d9cbd043992cf0b755ccadd2bf36fedd376
 
 build:
   number: 0
@@ -16,10 +16,9 @@ build:
 requirements:
   host:
     - python >=3.8
-    - param >=1.7.0
     - pip
-    - pyct >=0.4.4
     - setuptools >=30.3.0
+    - setuptools_scm >=6
   run:
     - python >=3.8
     - bokeh >=1.0.0
