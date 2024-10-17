@@ -40,7 +40,7 @@ test:
     - hvplot.pandas
   commands:
     - pip check
-    - pytest hvplot -k 'not test_explorer_geo_revise_kind'
+    - pytest hvplot
   requires:
     - pytest
     - pip
