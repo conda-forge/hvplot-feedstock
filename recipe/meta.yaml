@@ -1,4 +1,4 @@
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 
 package:
   name: hvplot
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/h/hvplot/hvplot-{{ version }}.tar.gz
-  sha256: f3bf7a1dd585e4fda3e97854531c43fb920157b2c500b9e63dd36401ffe28034
+  sha256: 989ed0389189adc47edcd2601d2eab18bf366e74b07f5e2873e021323c4a14bb
 
 build:
   number: 0
@@ -40,7 +40,7 @@ test:
     - hvplot.pandas
   commands:
     - pip check
-    - pytest hvplot -k 'not test_explorer_geo_revise_kind'
+    - pytest hvplot
   requires:
     - pytest
     - pip
