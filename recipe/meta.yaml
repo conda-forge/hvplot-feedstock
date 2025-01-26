@@ -9,18 +9,18 @@ source:
   sha256: b7ad1f2f1c705e47e26b22c89c11711a84f7774faaabab756b45e8d1e00a6010
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools >=30.3.0
     - setuptools_scm >=6
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - bokeh >=3.1
     - colorcet >=2
     - holoviews >=1.19.0
@@ -56,6 +56,7 @@ test:
     - bokeh_sampledata   # [py>39]
     - spatialpandas
     - duckdb
+    - python {{ python_min }}
 
 about:
   home: https://hvplot.holoviz.org
