@@ -54,7 +54,7 @@ test:
     - scipy
     - ipywidgets
     - dask
-    - bokeh_sampledata   # [py>39]
+    - bokeh_sampledata   # [py>=310]
     - spatialpandas
     - duckdb
 
