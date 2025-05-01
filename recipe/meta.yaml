@@ -15,12 +15,12 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python >=3.9
     - pip
     - setuptools >=30.3.0
     - setuptools_scm >=6
   run:
-    - python >={{ python_min }}
+    - python >=3.9
     - bokeh >=3.1
     - colorcet >=2
     - holoviews >=1.19.0
@@ -42,7 +42,6 @@ test:
     - pip check
     - pytest hvplot
   requires:
-    - python {{ python_min }}
     - pytest
     - pip
     - parameterized
