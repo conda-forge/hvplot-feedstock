@@ -1,4 +1,6 @@
-{% set version = "0.11.3" %}
+# Global pin is 3.9 now, we're ahead so pin it here.
+{% set python_min = "3.10" %}
+{% set version = "0.12.0" %}
 
 package:
   name: hvplot
@@ -6,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/hvplot/hvplot-{{ version }}.tar.gz
-  sha256: ce82dea296af6146b9a51aa5ed1f772e5415a07c6c33a4eae0f00bbe7ec880ca
+  sha256: 85c9d324d27fd227de54fdde5a25faa2aada92b8956b56c4f241b12f46bfe7f7
 
 build:
   number: 0
@@ -17,8 +19,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools >=30.3.0
-    - setuptools_scm >=6
+    - hatchling >=1.25.0
+    - hatch-vcs >=0.4.0
   run:
     - python >={{ python_min }}
     - bokeh >=3.1
@@ -42,7 +44,7 @@ test:
     - pip check
     - pytest hvplot
   requires:
-    - python 3.10
+    - python {{ python_min }}
     - pytest
     - pip
     - parameterized
