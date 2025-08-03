@@ -1,3 +1,5 @@
+# Global pin is 3.9 now, we're ahead so pin it here.
+{% set python_min = "3.10" %}
 {% set version = "0.12.0" %}
 
 package:
@@ -42,7 +44,7 @@ test:
     - pip check
     - pytest hvplot
   requires:
-    - python 3.10
+    - python {{ python_min }}
     - pytest
     - pip
     - parameterized
