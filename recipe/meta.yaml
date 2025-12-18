@@ -1,6 +1,6 @@
 # Global pin is 3.9 now, we're ahead so pin it here.
 {% set python_min = "3.10" %}
-{% set version = "0.12.1" %}
+{% set version = "0.12.2" %}
 
 package:
   name: hvplot
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/hvplot/hvplot-{{ version }}.tar.gz
-  sha256: 66f4c9dbb7e5580c09ade55b14864ff6fcc96ed9ce11f7b67e9eb7072e2ed875
+  sha256: 9e29bbe65f94937d4eeaeccf33566540df936c8f9aeadfa12ea9f306d5237938
 
 build:
   number: 0
