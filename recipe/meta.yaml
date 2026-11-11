@@ -1,5 +1,5 @@
 # Global pin is 3.9 now, we're ahead so pin it here.
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set version = "0.13.0" %}
 
 package:
